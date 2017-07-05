@@ -112,6 +112,7 @@ path.resolve(__dirname, '../lib/common.js');
 一般是权限:sudo
 2.loader:下载相关loader :npm babel-loader
 3.路径名字容易混淆.造成找不到路径,多是路径这样的问题.
+4.使用Google搜索报错的关键字,一般前辈遇到的问题都会重现.
 
 ## Webpack 的特点
 将依赖树拆分成按需加载的块
