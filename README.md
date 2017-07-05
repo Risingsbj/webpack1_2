@@ -79,3 +79,46 @@ Carousel.init($('.carousel'))
 GoTop.init()
 AddMore.init($('.btnMore'))
 ```
+
+### 笔记
+
+- node文件的__dirname, __filename问题?
+- https://github.com/imsobear/blog/issues/48
+
+
+- 我文件的路径path: __dirname+'/src/dist', //输出路径
+
+- 参考资料如是说:
+只有在 require() 时才使用相对路径(./, ../) 的写法，其他地方一律使用绝对路径，如下：
+// 当前目录下
+path.dirname(__filename) + '/test.js';
+// 相邻目录下
+path.resolve(__dirname, '../lib/common.js');
+
+## 配置
+
+- 进入项目目录
+确定已经有 package.json，没有就通过 npm init 创建
+- 安装 webpack 依赖
+指令:$ npm install webpack --save-dev
+安装后会有一个叫node_modules的文件,里面很多文件bin..
+- 配置文件
+- 运行打包:npm start 
+前提: "scripts": {
+    "start":"webpack"
+  },
+- 怎么调试:
+1.根据命令行的报错信息找原因.
+一般是权限:sudo
+2.loader:下载相关loader :npm babel-loader
+3.路径名字容易混淆.造成找不到路径,多是路径这样的问题.
+
+## Webpack 的特点
+将依赖树拆分成按需加载的块
+初始化加载的耗时尽量少
+各种静态资源都可以视作模块
+将第三方库整合成模块的能力
+可以自定义打包逻辑的能力
+适合大项目，无论是单页还是多页的 Web 应用
+
+
