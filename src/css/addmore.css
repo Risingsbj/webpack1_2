@@ -1,0 +1,84 @@
+body {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 994px;
+            margin: 0 auto;
+        }
+
+        .wrap::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .news-ct {
+            position: relative;
+            margin-right: -18px;
+            border: 1px solid #dbdbdb;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 5px #dbdbdb;
+        }
+
+        .news {
+            border: 1px solid pink;
+            position: absolute;
+            width: 285px;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            text-align: left;
+            padding: 0 10px;
+            margin: 10px 15px;
+            /*margin-top: 18px;*/
+        }
+
+        .news>a>img {
+            width: 283px;
+            margin-top: 10px;
+            /*margin-left: 10px;*/
+        }
+
+        .news>h4 {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+
+        .news>p {
+            font-size: 14px;
+            color: #777371;
+        }
+
+        .btnMore {
+            /*opacity: 1;*/
+            padding: 5px 10px;
+            border: 1px solid red;
+            width: 100px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: red;
+            border-radius: 5px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .btnMore:hover {
+            cursor: pointer;
+			height: 50px;
+            line-height: 50px;
+			width: 140px;
+			font-size: 20px;
+			transition: all 0.2s;
+        }
